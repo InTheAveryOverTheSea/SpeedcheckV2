@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SpeedCheck</title>
+  <link rel="stylesheet" href="stylesheet.css" />
+  <script src="javaforprototype.js" defer></script>
+</head>
+<body>
+<main>
+  <h1>Speedcheck</h1>
+  <div id="time">0 ms</div>
+
+  <div id="controls">
+    <button id="startStopBtn">Start</button>
+    <button id="saveSplitBtn">Split</button>
+    <button id="endRunBtn">Save Run</button>
+  </div>
+
+  <div class="card">
+    <h3>Current Run Splits</h3>
+    <ul id="currentRunList"></ul>
+    <div id="splitControls">
+      <!-- Removed Add/Remove buttons -->
+      <button id="modifySplitsBtn" class="splitBtn">Modify Splits</button>
+    </div>
+  </div>
+
+  <div class="card">
+    <h3>Personal Bests (Splits)</h3>
+    <ul id="pbList"></ul>
+  </div>
+
+  <div class="card">
+    <h3>Overall PB Run (Total Time)</h3>
+    <div id="bestRunDisplay"></div>
+  </div>
+
+  <div id="bottomcontrols">
+    <button id="exportBtn" class="bottombutton">Export Runs & PBs</button>
+    <button id="clearDataBtn" class="bottombutton">Clear Saved Data</button>
+  </div>
+</main>
+
+<!-- Modal for modifying splits -->
+<div id="splitModal" class="modal">
+  <div class="modal-content">
+    <span class="close-button" id="closeModalBtn">&times;</span>
+    <h2>Modify Splits</h2>
+    <ul id="splitEditList"></ul>
+    <div class="modal-controls">
+      <button id="addNewSplitBtn">Add Split</button>
+      <button id="clearAllSplitsBtn">Clear All Splits</button>
+    </div>
+  </div>
+</div>
+</body>
+</html>
