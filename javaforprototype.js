@@ -287,6 +287,7 @@ clearAllSplitsBtn.addEventListener("click", () => {
 });
 
 // Help modal functionality
+
 const helpBtn = document.getElementById("helpBtn");
 const helpModal = document.getElementById("helpModal");
 const closeHelpModalBtn = document.getElementById("closeHelpModalBtn");
@@ -299,9 +300,10 @@ closeHelpModalBtn.addEventListener("click", () => {
   helpModal.style.display = "none";
 });
 
-// Close when clicking outside the popup
+// Close when clicking the dark area outside the popup
 window.addEventListener("click", (event) => {
   if (event.target === helpModal) {
     helpModal.style.display = "none";
   }
 });
+
