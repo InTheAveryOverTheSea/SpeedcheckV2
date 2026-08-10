@@ -230,10 +230,10 @@ main {
   display: flex;
   justify-content: center;
   margin-top: 1rem;
-  margin-bottom: 0;
+  margin-bottom: 1rem;
 }
 
-#helpControls button {
+#helpControls .bottombutton {
   max-width: 300px;
-  width: 100%;
+  width: 40%;
 }
