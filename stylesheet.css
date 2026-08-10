@@ -226,3 +226,14 @@ main {
   border: none;
   cursor: pointer;
 }
+#helpControls {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+  margin-bottom: 0;
+}
+
+#helpControls button {
+  max-width: 300px;
+  width: 100%;
+}
