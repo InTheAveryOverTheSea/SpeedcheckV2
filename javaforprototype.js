@@ -290,14 +290,19 @@ const helpBtn = document.getElementById("helpBtn");
 const helpModal = document.getElementById("helpModal");
 const closeHelpBtn = document.getElementById("closeHelpBtn");
 
+// help modal functionality
+const helpBtn = document.getElementById("helpBtn");
+const helpModal = document.getElementById("helpModal");
+const closeHelpModalBtn = document.getElementById("closeHelpModalBtn");
+
 helpBtn.addEventListener("click", () => {
   helpModal.style.display = "block";
 });
 
-closeHelpBtn.addEventListener("click", () => {
+closeHelpModalBtn.addEventListener("click", () => {
   helpModal.style.display = "none";
 });
-// close help modal when clicking outside of it
+
 window.addEventListener("click", (event) => {
   if (event.target === helpModal) {
     helpModal.style.display = "none";
