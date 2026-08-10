@@ -285,10 +285,6 @@ clearAllSplitsBtn.addEventListener("click", () => {
     updatePBDisplay();
   }
 });
-// help modal functionality
-const helpBtn = document.getElementById("helpBtn");
-const helpModal = document.getElementById("helpModal");
-const closeHelpBtn = document.getElementById("closeHelpBtn");
 
 // help modal functionality
 const helpBtn = document.getElementById("helpBtn");
