@@ -287,8 +287,8 @@ clearAllSplitsBtn.addEventListener("click", () => {
 });
 
 // help modal functionality
-const helpBtn = document.getElementById("helpBtn");
 const helpModal = document.getElementById("helpModal");
+const helpBtn = document.getElementById("helpControls");
 const closeHelpModalBtn = document.getElementById("closeHelpModalBtn");
 
 helpBtn.addEventListener("click", () => {
